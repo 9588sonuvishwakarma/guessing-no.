@@ -1,0 +1,13 @@
+n=18
+number_of_guesses=0
+print("number of guesses is limited to only  nine time")
+while(number_of_guesses<=6):
+    number_of_guesses+=1
+    guess_number=int(input("guess the number \n"))
+    if guess_number<n:
+        print("your guess number is less please try again")
+    elif guess_number>n:
+        print("your guess number is high please try again ")
+    else:
+        print(f"you are winner sir well done! \n you have attented number of time  {number_of_guesses}")
+        break
